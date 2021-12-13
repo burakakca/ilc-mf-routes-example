@@ -1,0 +1,117 @@
+.ilc-learning-react a{
+    background: white;
+}
+
+.ttt-game {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ttt-game ol,
+.ttt-game ul {
+    padding-left: 30px;
+}
+
+.ttt-game .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.ttt-game .status {
+    margin-bottom: 10px;
+}
+
+.ttt-game .square {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 34px;
+}
+
+.ttt-game .square:focus {
+    outline: none;
+}
+
+.ttt-game .kbd-navigation .square:focus {
+    background: #ddd;
+}
+
+.ttt-game .game-info {
+    margin-left: 20px;
+}
+
+
+.snake-game {
+    position: relative;
+    margin: 10px auto;
+}
+.snake-game:focus {
+    outline: none;
+}
+.snake-game * {
+    box-sizing: border-box;
+}
+.snake-game .grid {
+    box-sizing: content-box;
+    padding: 0;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.snake-game .grid-cell {
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.snake-game .grid-cell--food {
+    background-color: blue;
+}
+.snake-game .grid-cell--snake {
+    background-color: orange;
+}
+.snake-game .game__overlay {
+    position: absolute;
+    left: 0;
+    right: -1px;
+    bottom: -1px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.snake-game .mb-1 {
+    margin-bottom: 1rem;
+}
+
+.snake-game button {
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+    border: 2px solid blue;
+    padding: .75rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+}
